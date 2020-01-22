@@ -34,3 +34,10 @@ ON o.CustomerId = c.id
 JOIN Employee as e 
 ON o.EmployeeId = e.id;
 
+---------- SQL Stretch on W3Schools --------
+
+--Displays CategoryName and a new column called Count that shows how many products are in each category. Shows 9 records.
+
+
+
+--Display OrderID and a column called ItemCount that shows the total number of products placed on the order. Shows 196 records.

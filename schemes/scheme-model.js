@@ -39,6 +39,10 @@ return db('schemes').where({id}).update(changes)
     })
 }
 
-function remove(id){
-    return db('schemes').where({ id }).del()
+async function remove(id){
+    const removed =  await findById(id);
+    await db('schemes').where({ id }).del();
+
+    return removed;
+   
 }
